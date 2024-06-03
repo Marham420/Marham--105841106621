@@ -1,8 +1,25 @@
-import { StyleSheet,Text, View } from "react-native";
+import { StyleSheet,Text, View, Image } from "react-native";
 import React from "react";
 const App = () => {
   return (
 
+    <View style = {{ 
+      flex: 1,
+      justifyContent:"center",
+      alignItems: "center",
+    }}>
+      <Text style = {{
+        fontSize: 30,
+        fontWeight: "bold",
+        marginBottom: 20,
+        position: "center",
+        top: 160,
+      }}>Selamat Datang
+      </Text>
+      <Image
+        source = {require('./assets/Marham Shop.png')}
+        style = {{width: 200, height: 200, marginBottom: 20, top :200, borderRadius: 50, }}
+        />
     <View style = {{
       flex: 1, 
       flexDirection: "row",
@@ -40,6 +57,7 @@ const App = () => {
           fontWeight: "bold",
         }}>Daftar</Text>
       </View>
+    </View>
     </View>
   );
 };
