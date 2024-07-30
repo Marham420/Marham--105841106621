@@ -6,14 +6,20 @@ const TextInputCustom = ({ name, color}) => {
   );
 }; 
 
+
 const App = () => {
   return (
     <View style={styles.container}>
-      <TextInputCustom name = "User" color = "red"/>
-      <TextInputCustom name = "Email" color = "red"/>
-      <TextInputCustom name = "Password" color = "red"/>
+
+      <TextInputCustom
+       name = "User" color = "red"/>
+      <TextInputCustom
+       name = "Email" color = "red"/>
+      <TextInputCustom
+       name = "Password" color = "red"/>
       </View>
   );
+
 };
 
 const styles = StyleSheet.create({
